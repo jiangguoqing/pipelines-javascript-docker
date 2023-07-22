@@ -27,5 +27,5 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'docker'
-        repository: 'test'
+        repository: '$(tag)'
         command: 'push'
