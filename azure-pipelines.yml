@@ -18,14 +18,8 @@ stages:
       vmImage: ubuntu-latest
     steps:
     - task: Docker@2
-      displayName: Build an image
-      inputs:
-        command: build
-        dockerfile: '$(Build.SourcesDirectory)/app/Dockerfile'
-        tags: |
-          $(tag)
-    - task: Docker@2
       inputs:
         containerRegistry: 'docker'
-        repository: '$(tag)'
-        command: 'push'
+        repository: 'mrjiangguoqing/test'
+        command: 'buildAndPush'
+        Dockerfile: '**/Dockerfile'
