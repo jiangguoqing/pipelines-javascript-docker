@@ -23,5 +23,5 @@ stages:
           command: buildAndPush
           repository: ok
           dockerfile: '**/Dockerfile'
-          containerRegistry: test555
+          containerRegistry: testjgq
           tags: $(Build.BuildId)
