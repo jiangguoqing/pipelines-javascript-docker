@@ -38,5 +38,5 @@ stages:
           command: buildAndPush
           repository: jgq
           dockerfile: '**/Dockerfile'
-          containerRegistry: jgq
+          containerRegistry: toacr
           tags: $(Build.BuildId)
