@@ -38,5 +38,5 @@ stages:
           command: buildAndPush
           repository: jgq
           dockerfile: '**/Dockerfile'
-          containerRegistry: testjgq.azurecr.io
+          containerRegistry: jgq
           tags: $(Build.BuildId)
