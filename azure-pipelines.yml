@@ -26,7 +26,7 @@ stages:
             echo "##vso[task.setvariable variable=address;isOutput=true;]$ipaddress"
       - task: AzureCLI@2
         inputs:
-          azureSubscription: ea3f2169-1ea9-4f94-9366-e4dcdd76703b
+          azureSubscription: 'ea3f2169-1ea9-4f94-9366-e4dcdd76703b'
           scriptType: bash
           scriptLocation: inlineScript
           inlineScript: |
