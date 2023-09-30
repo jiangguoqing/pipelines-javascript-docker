@@ -21,7 +21,7 @@ stages:
         displayName: Build and push an image to container registry
         inputs:
           command: buildAndPush
-          repository: ok
+          repository: jgq
           dockerfile: '**/Dockerfile'
           containerRegistry: testjgq
           tags: $(Build.BuildId)
