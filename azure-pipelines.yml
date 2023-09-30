@@ -21,7 +21,7 @@ stages:
         displayName: Build and push an image to container registry
         inputs:
           command: buildAndPush
-          repository: test
+          repository: ok
           dockerfile: '**/Dockerfile'
           containerRegistry: test555
           tags: $(Build.BuildId)
