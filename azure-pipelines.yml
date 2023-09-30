@@ -22,6 +22,6 @@ stages:
         inputs:
           command: buildAndPush
           repository: test
-          dockerfile: 'src/adservice/Dockerfile'
+          dockerfile: '**/Dockerfile'
           containerRegistry: test555
           tags: $(Build.BuildId)
