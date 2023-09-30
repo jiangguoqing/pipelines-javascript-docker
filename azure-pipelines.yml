@@ -31,7 +31,7 @@ stages:
           scriptLocation: inlineScript
           inlineScript: |
             # Add IP to Key Vault Firewall
-            az acr network-rule add   --name crKunpengreilgf24g2be2   --ip-address "$(BuildAgentIP.address)"
+            az acr network-rule add   --name testjgq   --ip-address "$(BuildAgentIP.address)"
       - task: Docker@2
         displayName: Build and push an image to container registry
         inputs:
